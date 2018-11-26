@@ -335,6 +335,8 @@ if 'gcc' in env['CC'] or 'clang' in env['CC']:
 			if 'gcc' in env['CC']:
 				env['CFLAGS'] += [
 					'-fexcess-precision=standard',
+					'-S',
+					'-masm=intel',
 				]
 		else:
 			env['CCFLAGS'] += [
